@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "name": "Sample Extra Oil",
+      "category": "oil",
+      "price": 99.99,
+      "merchant_id": 1,
+      "stock": 10,
+      "merchant_quantity": 100
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+.profile-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+}
+
+.profile-header h1 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin: 0;
+}
+
+.back-btn {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #7f8c8d;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.profile-username {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.profile-phone {
+  color: #34495e;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.profile-role {
+  color: #34495e;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.profile-role strong {
+  color: #3498db;
+  font-weight: 600;
+}
+.profile-actions {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  background: transparent;
+  color: #e74c3c;
+  border: 1px solid rgba(231,76,60,0.15);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, transform 0.08s;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  background: rgba(231,76,60,0.06);
+  color: #c0392b;
+  outline: none;
+}
+
+.orders-section {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-section h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-controls select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #dcdfe3;
+  font-size: 13px;
+}
+
+.status {
+  color: #7f8c8d;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.status.error {
+  color: #e74c3c;
+  background: #fadbd8;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.orders-table-container {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.orders-table thead {
+  background: #ecf0f1;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.status-pending { background: #f39c12; }
+.status-delivered { background: #27ae60; }
+.status-cancelled { background: #c0392b; }
+
+.orders-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #bdc3c7;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  color: #34495e;
+  font-size: 14px;
+}
+
+.orders-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #3498db;
+}
+
+.address {
+  max-width: 250px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-title {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.empty-sub {
+  color: #7f8c8d;
+  margin: 0 0 16px 0;
+}
+
+.cta {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Typography cleanup for table */
+.orders-table th, .orders-table td { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 15px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .logout-btn {
+    width: 100%;
+  }
+
+  .orders-table {
+    font-size: 12px;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 10px 8px;
+  }
+
+  .orders-table-container {
+    overflow-x: auto;
+  }
+}

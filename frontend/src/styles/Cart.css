@@ -1,0 +1,485 @@
+/* ===============================
+   CART PAGE TABLE LAYOUT
+================================ */
+.cart-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 30px 24px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Status / Empty */
+.cart-status,
+.cart-empty {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.cart-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   CART CONTAINER
+================================ */
+.cart-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   CART TABLE
+================================ */
+.cart-table {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+/* Table Header */
+.table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1.0fr 160px 110px 120px 160px 140px 120px;
+  gap: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(79, 172, 254, 0.15));
+  border-bottom: 2px solid rgba(0, 242, 254, 0.3);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #00f2fe;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Table Row - ONE LINE FORMAT */
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.0fr 160px 110px 120px 160px 140px 120px;
+  gap: 15px;
+  padding: 12px 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Layout when GST columns are removed */
+.cart-table.no-gst .table-header,
+.cart-table.no-gst .table-row {
+  grid-template-columns: 1.5fr 1.0fr 160px 160px 140px 120px; /* removed gst columns */
+}
+
+.table-row:hover {
+  background: rgba(0, 242, 254, 0.08);
+  border-bottom-color: rgba(0, 242, 254, 0.3);
+  box-shadow: inset 0 0 20px rgba(0, 242, 254, 0.1);
+}
+
+/* Column Styles */
+.col-product,
+.col-seller,
+.col-price,
+.col-gst,
+.col-gst-amt,
+.col-quantity,
+.col-total,
+.col-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+/* Prevent header cells and numeric values from wrapping/clipping */
+.table-header > div,
+.col-price .price-value,
+.col-gst-amt .gst-value,
+.col-total .total-value {
+  white-space: nowrap;
+}
+
+.col-gst,
+.col-total {
+  justify-content: center;
+}
+
+.col-gst-amt {
+  justify-content: center;
+}
+
+.col-actions {
+  justify-content: center;
+}
+
+/* Product Name */
+.product-name {
+  font-weight: 600;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Seller / Merchant */
+.merchant-tag {
+  font-size: 12px;
+  opacity: 0.85;
+  background: rgba(0, 242, 254, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Price Value */
+.price-value {
+  font-weight: 700;
+  font-size: 13px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.price-unit {
+  font-size: 11px;
+  opacity: 0.8;
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.col-price .price-value,
+.col-gst-amt .gst-value,
+.col-total .total-value {
+  white-space: nowrap;
+}
+
+/* GST */
+.gst-value {
+  font-weight: 600;
+  font-size: 12px;
+  background: rgba(0, 242, 254, 0.15);
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Quantity Controls */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  white-space: nowrap;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  min-width: 28px;
+}
+
+.qty-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 242, 254, 0.4);
+}
+
+.qty-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.qty-display {
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Total Value */
+.total-value {
+  font-weight: 700;
+  font-size: 14px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+/* Remove Button */
+.remove-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  color: white;
+  font-weight: 600;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.remove-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+}
+
+.remove-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Softer remove button variant */
+.remove-btn.soft {
+  background: transparent;
+  color: #ff6b6b;
+  border: 1px solid rgba(255,107,107,0.12);
+  text-transform: none;
+  font-weight: 600;
+}
+
+.remove-btn.soft:hover {
+  background: rgba(255,107,107,0.06);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Price breakdown */
+.price-breakdown {
+  max-width: 400px;
+  margin: 10px 0 0 auto;
+  background: rgba(255,255,255,0.03);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #fff;
+}
+
+.price-breakdown .break-row { display:flex; justify-content:space-between; padding:6px 0; color: #dfeffb; }
+.price-breakdown .break-row.total { font-weight:800; font-size:1.05rem; border-top:1px dashed rgba(255,255,255,0.04); padding-top:10px; margin-top:6px; }
+
+/* Empty cart enhanced */
+.cart-empty { text-align:center; padding:40px 20px; background: rgba(255,255,255,0.02); border-radius:12px; }
+.cart-empty h2 { font-size:22px; margin: 0 0 8px 0; }
+.cart-empty p { color: rgba(255,255,255,0.8); margin:0 0 12px 0; }
+.cart-empty .cta { background: linear-gradient(135deg,#00f2fe,#4facfe); color:#001; padding:10px 18px; border-radius:8px; border:none; font-weight:700; }
+
+/* ===============================
+   FOOTER
+================================ */
+.cart-footer {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===============================
+   TOTAL
+================================ */
+.cart-total {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.back-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* PROCEED */
+.proceed-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.4);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.proceed-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 242, 254, 0.5);
+}
+
+/* ===============================
+   COMPACT MODE (RESPONSIVE)
+================================ */
+@media (max-width: 1200px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1.3fr 1fr 0.9fr 0.7fr 0.9fr 1fr 0.9fr 1fr;
+    gap: 12px;
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+
+  .product-name {
+    font-size: 12px;
+  }
+
+  .cart-total {
+    font-size: 20px;
+  }
+
+  .cart-footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* ===============================
+   MOBILE (1 COLUMN)
+================================ */
+@media (max-width: 768px) {
+  .table-header {
+    display: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+  }
+
+  .col-product::before {
+    content: "Product: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-seller::before {
+    content: "Seller: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-price::before {
+    content: "Price: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-gst::before {
+    content: "GST: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-gst-amt::before {
+    content: "GST Amt: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-quantity::before {
+    content: "Qty: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-total::before {
+    content: "Total: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .col-actions::before {
+    content: "Action: ";
+    font-weight: 700;
+    color: #00f2fe;
+  }
+
+  .cart-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .back-btn,
+  .proceed-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cart-total {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+}

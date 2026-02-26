@@ -1,0 +1,42 @@
+[
+  {
+    "username": "ravi",
+    "password": "$2a$10$MN4hOEbgCPu0VRZURMSUS.Hc1ak150CJ1Do41sEwvKv0a5pc7TxQG",
+    "role": "customer"
+  },
+  {
+    "username": "anu",
+    "password": "password123",
+    "role": "customer"
+  },
+  {
+    "username": "fm_owner",
+    "password": "$2a$10$WHH0.wHUXtcZYgh7RFi/Be8Qv0A8is8j7mTzXr0LaztlU8TreyRdG",
+    "role": "merchant"
+  },
+  {
+    "username": "inv_manager",
+    "password": "password123",
+    "role": "inventory"
+  },
+  {
+    "username": "wholesaler",
+    "password": "password123",
+    "role": "wholesaler"
+  },
+  {
+    "username": "jothi",
+    "password": "$2a$10$y4DiMZJLKc6ndgP5FdwOmuEA7ZV8YZDctZ3TfB9/YNSI5No331jyC",
+    "role": "merchant"
+  },
+  {
+    "username": "testmerchant1770916695136",
+    "password": "$2a$10$PMd60wOXN232Cu7wxUBS8uIKl.MXFDDxXCyS6V6/Wvi46QxqZ4IR6",
+    "role": "merchant"
+  },
+  {
+    "username": "jothii",
+    "password": "$2a$10$95YPxjpC2HO7AlJOnhJ6i.3k9crY.oQ0RvY7z75Z3UkOK8nLxqYN2",
+    "role": "customer"
+  }
+]

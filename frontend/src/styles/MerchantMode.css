@@ -1,0 +1,43 @@
+.mm-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.mm-title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.mm-sub {
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.mm-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.mm-card {
+  width: 260px;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mm-card:hover {
+  transform: translateY(-6px);
+  background: rgba(0,255,255,0.2);
+}
+
+.mm-card h3 {
+  margin-top: 15px;
+}
