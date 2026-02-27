@@ -121,7 +121,14 @@ grocery_app/
 ```
 
 ## Screen shots 
-![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143456.png)
-![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143509.png)
-![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143602.png)
-![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143608.png)
+
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142134.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142145.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142153.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142205.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142216.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142228.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142242.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142310.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142336.png)
+![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142421.png)
