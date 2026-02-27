@@ -119,3 +119,9 @@ grocery_app/
 │   └── public/           # Static Assets
 └── scripts/              # Utility Scripts
 ```
+
+## Screen shots 
+![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143456.png)
+![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143509.png)
+![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143602.png)
+![image alt](https://github.com/sashruthi/fileorgnizer/blob/df7a65acb066dd24689f502d4efcee35d295e6c8/Screenshot%202025-11-28%20143608.png)
