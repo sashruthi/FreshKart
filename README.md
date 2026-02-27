@@ -121,7 +121,6 @@ grocery_app/
 ```
 
 ## Screen shots 
-
 ![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142134.png)
 ![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142145.png)
 ![image alt](https://github.com/sashruthi/FreshKart/blob/main/Screenshot%202026-02-27%20142153.png)
